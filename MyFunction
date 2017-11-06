@@ -1,0 +1,37 @@
+import turtle
+turtle.colormode(255)
+
+bob = turtle.Turtle()
+bob.speed(11)
+
+turtle.bgcolor("black")
+
+distance = 100
+
+for times in range(200):
+    bob.color(0,times,times)
+    bob.right(20)
+    bob.circle(150-times)
+    bob.right(120)
+    bob.forward(250)
+
+for times in range(200):
+    bob.penup()
+    bob.goto(300,200)
+    bob.pendown()
+    bob.color(times,times,0)
+    bob.right(20)
+    bob.circle(150-times)
+    bob.right(90)
+    bob.forward(250)
+
+
+for times in range(200):
+    bob.penup()
+    bob.goto(-500,200)
+    bob.pendown()
+    bob.color(times,0,0)
+    bob.right(20)
+    bob.circle(150-times)
+    bob.right(90)
+    bob.forward(250)
